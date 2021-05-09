@@ -5,12 +5,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { DoctorsComponent } from './doctors/doctors.component';
 import { ListDoctorComponent } from './list-doctor/list-doctor.component';
+import { ListMedicamentComponent } from './list-medicament/list-medicament.component';
+import { MedicamentComponent } from './medicament/medicament.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DoctorsComponent,
-    ListDoctorComponent
+    ListDoctorComponent,
+    ListMedicamentComponent,
+    MedicamentComponent
   ],
   imports: [
     BrowserModule,
