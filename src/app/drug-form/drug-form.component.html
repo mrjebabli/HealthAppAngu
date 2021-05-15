@@ -1,0 +1,119 @@
+<div  class="container">
+    <div>
+        <br>
+        <br>
+      </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-default">Id </span> 
+      <input type="number" class="form-control" aria-label="Sizing example input" placeholder="10"
+      aria-describedby="inputGroup-sizing-default" [(ngModel)]="drug.id" 
+       required #i="ngModel" pattern="[0-9]+$">
+    </div>
+    <div class="alert alert-danger" *ngIf="i.invalid && i.touched " >
+      <div *ngIf="i.errors.required">Id is a required field</div>
+      <div *ngIf="i.errors.pattern">Please provide a valid pattern</div>
+  
+    </div>
+
+
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" placeholder="OSMOLAX"
+        aria-describedby="inputGroup-sizing-default" [(ngModel)]="drug.name" 
+        required #n="ngModel" minlength="3" >
+      </div>
+      <div class="alert alert-danger" *ngIf="n.invalid && n.touched ">
+        <div *ngIf="n.errors.required">Name is a required field</div>
+        <div *ngIf="n.errors.minlength"> error: minlength is equal to 3</div>
+        <div *ngIf="n.errors.pattern">Please provide a valid Name of the medicament </div>
+      </div>
+
+
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">Laboratory</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" placeholder="SANOFI-AVENTIS FRANCE"
+        aria-describedby="inputGroup-sizing-default" [(ngModel)]="drug.Laboratory" 
+        required #l="ngModel" minlength="3" >
+      </div>
+      <div class="alert alert-danger" *ngIf="l.invalid && l.touched ">
+        <div *ngIf="l.errors.required">Laboratory is a required field</div>
+        <div *ngIf="l.errors.minlength"> error: minlength is equal to 3</div>
+        <div *ngIf="l.errors.pattern"> Please provide a valid name of the Laboratory  </div>
+      </div>
+
+      
+
+
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">Dosage</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" placeholder="500 MG"
+        aria-describedby="inputGroup-sizing-default" [(ngModel)]="drug.Dosage" 
+        required #d="ngModel" minlength="3" >
+      </div>
+      <div class="alert alert-danger" *ngIf="d.invalid && d.touched ">
+        <div *ngIf="d.errors.required">Dosage is a required field</div>
+        <div *ngIf="d.errors.minlength">  minlength is equal to 3</div>
+       
+      </div>
+      
+
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">Form</span>
+        <input type="text" class="form-control" aria-label="Sizing example input"  placeholder="tablet"
+         aria-describedby="inputGroup-sizing-default" [(ngModel)]="drug.Form"
+          required #f="ngModel" minlength="3" pattern="[a-zA-Z]+$">
+        </div>
+        <div class="alert alert-danger" *ngIf="f.invalid && f.touched ">
+          <div *ngIf="f.errors.required">Form is a required field</div>
+          <div *ngIf="f.errors.minlength"> minlength is equal to 3</div>
+          <div *ngIf="f.errors.pattern"> Please provide a valid Form </div>
+        </div>
+     
+
+
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">Quantity</span>
+        <input type="number" class="form-control" aria-label="Sizing example input" placeholder="Example: 10 "
+         aria-describedby="inputGroup-sizing-default" [(ngModel)]="drug.quantity" 
+         required #q="ngModel" minlength="3" pattern="[0-9]+$">
+      </div>
+      <div class="alert alert-danger" *ngIf="q.invalid && q.touched ">
+        <div *ngIf="q.errors.required">quantity is a required field</div>
+        <div *ngIf="q.errors.minlength"> minlength is equal to 3</div>
+        <div *ngIf="q.errors.pattern"> Please provide a valid quantity</div>
+      </div>
+
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">Price</span>
+        <input type="number" class="form-control" aria-label="Sizing example input"  placeholder="Price with Tunisian Dinar "
+        aria-describedby="inputGroup-sizing-default" [(ngModel)]="drug.Price" 
+        required #p="ngModel" minlength="1" pattern="[0-9]+$">
+      </div>
+      
+      <div class="alert alert-danger" *ngIf="p.invalid && p.touched ">
+        <div *ngIf="p.errors.required">Price is a required field</div>
+        <div *ngIf="p.errors.minlength"> minlength is equal to 2</div>
+        <div *ngIf="p.errors.pattern"> Please provide a valid Price</div>
+      </div>
+      
+
+
+<div>
+  <br>
+  <br>
+</div>
+<div>
+ 
+      <button  class="btn btn-success" (click)="save()" 
+      [disabled]=" i.invalid && n.invalid && l.invalid && d.invalid && f.invalid && q.invalid && p.invalid ">Add Medicament</button>
+      <br>
+      <br>
+    </div>
+</div>

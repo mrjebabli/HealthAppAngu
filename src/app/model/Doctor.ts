@@ -5,6 +5,8 @@ export class Doctor {
     phone:number;
     mail:string;
     city:string;
+    recommendation:number;
+
 
 
 }

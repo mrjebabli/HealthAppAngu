@@ -1,0 +1,40 @@
+<div class="container">
+
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+          
+     
+        <h5 class="card-title"><p>  {{drug.name}} </p></h5>
+        <img src="../../assets/{{drug.name}}.png" class="card-img-top" alt="{{drug.name}}.png">
+        
+        <h6 class="card-subtitle mb-2 text-muted"><p> Form: {{drug.Form}} </p></h6>
+        <h6 class="card-subtitle mb-2 text-muted"> <p>  Laboratory: {{drug.Laboratory}} </p></h6>
+        <h6 class="card-subtitle mb-2 text-muted"> <p>  Dosage: {{drug.Dosage}} </p> </h6>
+        <h6 class="card-subtitle mb-2 text-muted"> <p>  Id: {{drug.id}} </p> </h6>
+        <h6 class="card-subtitle mb-2 text-muted"> <p>  Available Quantity: {{drug.quantity}} pieces </p> </h6>
+        <a  style="float: left" routerLink="{{drug.id}}">More Details</a>
+        <div>
+          <br>
+          <br>
+        </div>
+        <h6 class="card-title"><p>Price: {{drug.Price}} DT </p></h6>
+      </div>
+        <div class="card-footer">
+        <button type="button" style="float: right" class="btn btn-primary">Buy Now</button>
+        <button type="button" style="float: left" class="btn btn-secondary">Add to Cart</button>
+        
+       
+      </div> 
+    </div>
+ 
+  <div>
+  <br>
+  <br>
+</div>
+</div>
+        
+          
+        
+                   
+         
+         

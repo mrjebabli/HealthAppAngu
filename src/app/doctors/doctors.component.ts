@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+
 import { Doctor } from '../model/Doctor';
 
 
@@ -9,10 +10,16 @@ import { Doctor } from '../model/Doctor';
 })
 export class DoctorsComponent implements OnInit {
   @Input() doctor: Doctor;
+  @Output() incrementEvent = new EventEmitter<Doctor>()
   constructor() { }
 
   ngOnInit(): void {
     
+  }
+  sendNotif(){
+    this.incrementEvent.emit(this.doctor);
+
+
   }
 
 }

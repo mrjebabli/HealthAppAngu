@@ -1,10 +1,33 @@
-<h2>Doctors DATA</h2>
-<p> doctor id: {{doctor.id}} </p>
-<p> doctor name: {{doctor.name}} </p>
-<p> doctor specialties: {{doctor.specialties}} </p>
-<p> doctor phone: {{doctor.phone}} </p>
-<p> doctor mail: {{doctor.mail}} </p>
-<p> doctor city: {{doctor.city}} </p>
+
+<div class="container-fluid">
+  <div class="card border-primary mb-3" style="max-width: 18rem;">
+    <div class="card-header"> <img src="../../assets/{{doctor.name}}.png"
+       class="mx-auto" style="width: 200px; height: 200px;" alt="{{doctor.name}}"></div>
+    <div class="card-body text-primary">
+      <h5 class="card-title"><p>  {{doctor.name}} </p></h5>
+      
+      <p class="card-text"><h6 class="card-subtitle mb-2 "><p> speciality: {{doctor.specialties}}</p></h6>
+      <h6 class="card-subtitle mb-2 "> <p>E-Mail: {{doctor.mail}} </p> </h6>
+      <h6 class="card-subtitle mb-2 "> <p>Phone Number: {{doctor.phone}}  </p> </h6>
+      <h6 class="card-subtitle mb-2 "> <p>City: {{doctor.city}}  </p> </h6>
+      <h6 class="card-subtitle mb-2"><p>doctor recommendation: {{doctor.recommendation}} </p></h6>  </div>
+
+    <div class="card-footer"> 
+      <button (click)="sendNotif()" type="button"  class="btn btn-primary"> I Recommend</button>
+    </div> 
+
+  </div>
+  <div>
+    <br>
+    
+  </div>
+</div>
+
+
+   
+
+
+
 
 
 

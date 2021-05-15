@@ -5,20 +5,41 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { DoctorsComponent } from './doctors/doctors.component';
 import { ListDoctorComponent } from './list-doctor/list-doctor.component';
-import { ListMedicamentComponent } from './list-medicament/list-medicament.component';
-import { MedicamentComponent } from './medicament/medicament.component';
+
+
+
+import { DrugListComponent } from './drug-list/drug-list.component';
+import { DrugFormComponent } from './drug-form/drug-form.component';
+import { DrugComponent } from './drug/drug.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DrugDetailsComponent } from './drug-details/drug-details.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import {  HttpClientModule } from '@angular/common/http';
+
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     DoctorsComponent,
     ListDoctorComponent,
-    ListMedicamentComponent,
-    MedicamentComponent
+    DrugListComponent,
+    DrugComponent,
+    DrugFormComponent,
+    DrugDetailsComponent,
+    NotFoundComponent
+    
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    
+   
+   
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

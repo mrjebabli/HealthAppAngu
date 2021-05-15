@@ -13,9 +13,18 @@ export class ListDoctorComponent implements OnInit {
 
   ngOnInit(): void {
     this.doctorList=[
-      {id: 1,name:'yosra',specialties:'dentist',phone:26800200,mail:'y.dentist@gmail.com' ,city:'tunis'},
-      {id: 2,name: 'ahmed',specialties:'Cardiologists',phone:98800200,mail:'a.cardio@gmail.com' ,city:'bardo'}
+      {id: 1,name:'Carly Lever',specialties:'pathologist',phone:26800200,mail:'c.lever@gmail.com' ,city:'tunis',recommendation:0},
+      {id: 2,name: 'shaun murphy',specialties:'surgeon ',phone:98800200,mail:'s.murphy@gmail.com' ,city:'bardo',recommendation:0},
+      {id: 1,name:'Carly Lever',specialties:'pathologist',phone:26800200,mail:'c.lever@gmail.com' ,city:'tunis',recommendation:0},
+      {id: 2,name: 'shaun murphy',specialties:'surgeon ',phone:98800200,mail:'s.murphy@gmail.com' ,city:'bardo',recommendation:0}
+  
+    
     ];
+  }
+
+  incrementRecommendation(d: Doctor){
+    let i=this.doctorList.indexOf(d);
+    this.doctorList[i].recommendation++;
   }
 
 }
