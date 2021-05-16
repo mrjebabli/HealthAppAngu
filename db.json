@@ -1,41 +1,114 @@
 {
   "doctors": [
-    { "id": 1, "name": "Carly Lever","specialties": "pathologist","phone": 26800200,
-           "mail": "c.lever@gmail.com", "city": "tunis", "recommendation": 0
-        },
-
-          {"id": 3,"name":"shaun murphy","specialties":"surgeon ","phone":26800200,
-           "mail":"s.murphy@gmail.com" ,"city":"tunis","recommendation":0
-        },
-
-        {"id": 5,"name":"shaun murphy","specialties":"surgeon ","phone":26800200,
-         "mail":"s.murphy@gmail.com" ,"city":"tunis","recommendation":0
-      },
-
-      {"id": 9,"name":"shaun murphy","specialties":"surgeon ","phone":26800200,
-       "mail":"s.murphy@gmail.com" ,"city":"tunis","recommendation":0
+    {
+      "id": 1,
+      "name": "Carly Lever",
+      "specialties": "pathologist",
+      "phone": 26800200,
+      "mail": "c.lever@gmail.com",
+      "city": "tunis",
+      "recommendation": 0
     },
-
-    {"id": 10,"name":"shaun murphy","specialties":"surgeon ","phone":26800200,
-     "mail":"s.murphy@gmail.com" ,"city":"tunis","recommendation":0
-  }
-
+    {
+      "id": 3,
+      "name": "shaun murphy",
+      "specialties": "surgeon ",
+      "phone": 26800200,
+      "mail": "s.murphy@gmail.com",
+      "city": "tunis",
+      "recommendation": 0
+    },
+    {
+      "id": 5,
+      "name": "shaun murphy",
+      "specialties": "surgeon ",
+      "phone": 26800200,
+      "mail": "s.murphy@gmail.com",
+      "city": "tunis",
+      "recommendation": 0
+    },
+    {
+      "id": 4,
+      "name": "Carly Lever",
+      "specialties": "pathologist",
+      "phone": 26800200,
+      "mail": "c.lever@gmail.com",
+      "city": "tunis",
+      "recommendation": 0
+    },
+    {
+      "id": 9,
+      "name": "shaun murphy",
+      "specialties": "surgeon ",
+      "phone": 26800200,
+      "mail": "s.murphy@gmail.com",
+      "city": "tunis",
+      "recommendation": 0
+    },
+    {
+      "id": 10,
+      "name": "shaun murphy",
+      "specialties": "surgeon ",
+      "phone": 26800200,
+      "mail": "s.murphy@gmail.com",
+      "city": "tunis",
+      "recommendation": 0
+    }
   ],
   "drugs": [
-    { "id": 1, "name": "DOLIPRANE VITAMINE C","Laboratory": "WINTHROP PHARMA TUNISIE","Dosage": "500 MG",
-           "Form": "tablet", "quantity": 100, "Price": 4.160
-        },
-
-          {"id": 2, "name": "OSMOLAX","Laboratory": "ADWYA","Dosage": "4 gr",
-            "Form": "Powder", "quantity": 10, "Price": 4.485
-        },
-
-        {"id": 3, "name": "BI-PROFENID LP","Laboratory": "SANOFI-AVENTIS FRANCE","Dosage": "100 mg",
-          "Form": "tablet", "quantity": 100, "Price": 4.160
-      }
-
-   
+    {
+      "id": 3,
+      "name": "DOLIPRANE VITAMINE C",
+      "Laboratory": "WINTHROP PHARMA TUNISIE",
+      "Dosage": "500 MG",
+      "Form": "tablet",
+      "quantity": 100,
+      "Price": 4.16
+    },
+    {
+      "id": 2,
+      "name": "OSMOLAX",
+      "Laboratory": "ADWYA",
+      "Dosage": "4 gr",
+      "Form": "Powder",
+      "quantity": 10,
+      "Price": 4.485
+    },
+    {
+      "id": 4,
+      "name": "BI-PROFENID LP",
+      "Laboratory": "SANOFI-AVENTIS FRANCE",
+      "Dosage": "100 mg",
+      "Form": "tablet",
+      "quantity": 100,
+      "Price": 4.16
+    },
+    {
+      "id": 6,
+      "name": "OSMOLAX",
+      "Laboratory": "ADWYA",
+      "Dosage": "4 gr",
+      "Form": "Powder",
+      "quantity": 10,
+      "Price": 4.485
+    },
+    {
+      "id": 8,
+      "name": "BI-PROFENID LP",
+      "Laboratory": "SANOFI-AVENTIS FRANCE",
+      "Dosage": "100 mg",
+      "Form": "tablet",
+      "quantity": 100,
+      "Price": 4.16
+    },
+    {
+      "id": 9,
+      "name": "BI-PROFENID LP",
+      "Laboratory": "SANOFI-AVENTIS FRANCE",
+      "Dosage": "100 mg",
+      "Form": "tablet",
+      "quantity": 100,
+      "Price": 4160
+    }
   ]
-
-
 }

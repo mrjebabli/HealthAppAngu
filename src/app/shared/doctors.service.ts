@@ -10,7 +10,13 @@ export class DoctorsService {
 
   constructor(private http: HttpClient) { }
 
-  getAll() {
+  getAllDoctors() {
     return this.http.get<Doctor[]>(this.url);
   }
+
+  addRecommendation(dr: Doctor) {
+    return this.http.post(this.url, dr);
+  }
+
+
 }

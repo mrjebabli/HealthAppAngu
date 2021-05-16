@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Doctor } from '../model/Doctor';
+import { DoctorsService } from '../shared/doctors.service';
 
 
 @Component({
@@ -9,18 +10,20 @@ import { Doctor } from '../model/Doctor';
 })
 export class ListDoctorComponent implements OnInit {
   doctorList: Doctor[];
-  constructor() { }
+  doctor: Doctor;
+ 
+  constructor(private doctorsService: DoctorsService) { }
 
   ngOnInit(): void {
-    this.doctorList=[
-      
-    
-    ];
+    this.doctorsService.getAllDoctors().subscribe(
+      (data: Doctor[]) => this.doctorList = data);
   }
 
   incrementRecommendation(d: Doctor){
     let i=this.doctorList.indexOf(d);
     this.doctorList[i].recommendation++;
   }
+  
+
 
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Drug } from '../model/Drug';
+import { DrugsService } from '../shared/drugs.service';
 
 @Component({
   selector: 'app-drug-form',
@@ -10,16 +11,18 @@ export class DrugFormComponent implements OnInit {
  
   drug:Drug
   list:Drug[];
-  constructor() { }
+  constructor(private durgService: DrugsService) { }
 
   ngOnInit(): void {
     
     this.drug= new Drug();
     this.list=[];
   }
-  save(){
-    this.list.push(this.drug);
-    console.log("after click");
-    console.log(this.list);
+  addD(){
+    this.durgService.addDrug(this.drug).subscribe(
+      ()=>this.list  = [this.drug,...this.list]
+    );
   }
+
+  
 }

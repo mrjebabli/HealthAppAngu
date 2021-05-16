@@ -81,12 +81,12 @@
         <span class="input-group-text" id="inputGroup-sizing-default">Quantity</span>
         <input type="number" class="form-control" aria-label="Sizing example input" placeholder="Example: 10 "
          aria-describedby="inputGroup-sizing-default" [(ngModel)]="drug.quantity" 
-         required #q="ngModel" minlength="3" pattern="[0-9]+$">
+         required #q="ngModel" minlength="3" >
       </div>
       <div class="alert alert-danger" *ngIf="q.invalid && q.touched ">
         <div *ngIf="q.errors.required">quantity is a required field</div>
         <div *ngIf="q.errors.minlength"> minlength is equal to 3</div>
-        <div *ngIf="q.errors.pattern"> Please provide a valid quantity</div>
+     
       </div>
 
 
@@ -94,13 +94,13 @@
         <span class="input-group-text" id="inputGroup-sizing-default">Price</span>
         <input type="number" class="form-control" aria-label="Sizing example input"  placeholder="Price with Tunisian Dinar "
         aria-describedby="inputGroup-sizing-default" [(ngModel)]="drug.Price" 
-        required #p="ngModel" minlength="1" pattern="[0-9]+$">
+        required #p="ngModel" minlength="1" >
       </div>
       
       <div class="alert alert-danger" *ngIf="p.invalid && p.touched ">
         <div *ngIf="p.errors.required">Price is a required field</div>
         <div *ngIf="p.errors.minlength"> minlength is equal to 2</div>
-        <div *ngIf="p.errors.pattern"> Please provide a valid Price</div>
+       
       </div>
       
 
@@ -111,8 +111,8 @@
 </div>
 <div>
  
-      <button  class="btn btn-success" (click)="save()" 
-      [disabled]=" i.invalid && n.invalid && l.invalid && d.invalid && f.invalid && q.invalid && p.invalid ">Add Medicament</button>
+      <button  class="btn btn-success" (click)="addD()" 
+      [disabled]=" i.invalid && n.invalid && l.invalid && d.invalid && f.invalid && q.invalid && p.invalid ">Add Drug</button>
       <br>
       <br>
     </div>

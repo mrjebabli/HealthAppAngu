@@ -15,6 +15,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { DrugDetailsComponent } from './drug-details/drug-details.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import {  HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
+
 
 
 
@@ -29,7 +31,8 @@ import {  HttpClientModule } from '@angular/common/http';
     DrugComponent,
     DrugFormComponent,
     DrugDetailsComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HomeComponent
     
   ],
   imports: [

@@ -1,8 +1,19 @@
 <div class="container">
-<p>List doctor Data</p>
+    <div>
+    <br>
+    <br>
+  </div>
 
-
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">All Doctors</a>
+      
+    </div>
+</nav>
+<div>
+    <br>
     
+  </div>
     <div class="row mb-3"> 
     <app-doctors *ngFor='let d of doctorList' [doctor]="d" (incrementEvent)="incrementRecommendation($event)">
 </app-doctors>
