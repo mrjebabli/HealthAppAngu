@@ -10,7 +10,9 @@ import { Doctor } from '../model/Doctor';
 })
 export class DoctorsComponent implements OnInit {
   @Input() doctor: Doctor;
-  @Output() incrementEvent = new EventEmitter<Doctor>()
+  @Output() incrementEvent = new EventEmitter<Doctor>();
+ 
+
   constructor() { }
 
   ngOnInit(): void {
@@ -19,7 +21,7 @@ export class DoctorsComponent implements OnInit {
   sendNotif(){
     this.incrementEvent.emit(this.doctor);
 
-
   }
+  
 
 }

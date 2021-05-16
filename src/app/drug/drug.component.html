@@ -6,11 +6,16 @@
      
         <h5 class="card-title"><p>  {{drug.name}} </p></h5>
         <img src="../../assets/{{drug.name}}.png" class="card-img-top" alt="{{drug.name}}.png">
+        <div>
+          <br> 
+          <br>
+          <br>
+        </div>
         
         <h6 class="card-subtitle mb-2 text-muted"><p> Form: {{drug.Form}} </p></h6>
-        <h6 class="card-subtitle mb-2 text-muted"> <p>  Laboratory: {{drug.Laboratory}} </p></h6>
+      
         <h6 class="card-subtitle mb-2 text-muted"> <p>  Dosage: {{drug.Dosage}} </p> </h6>
-        <h6 class="card-subtitle mb-2 text-muted"> <p>  Id: {{drug.id}} </p> </h6>
+      
         <h6 class="card-subtitle mb-2 text-muted"> <p>  Available Quantity: {{drug.quantity}} pieces </p> </h6>
         <a  style="float: left" routerLink="{{drug.id}}">More Details</a>
         <div>

@@ -5,12 +5,16 @@ import { DrugFormComponent } from './drug-form/drug-form.component';
 import { DrugListComponent } from './drug-list/drug-list.component';
 import { ListDoctorComponent } from './list-doctor/list-doctor.component';
 import { DrugDetailsComponent } from './drug-details/drug-details.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const ROUTES: Routes = [
   {path:'addmedicament',component:DrugFormComponent},
   {path:'drugs',component:DrugListComponent},
   {path:'doctors',component:ListDoctorComponent},
-  {path:'drugs/:id',component:DrugDetailsComponent}
+  {path:'drugs/:id',component:DrugDetailsComponent},
+  {path:'**',component:NotFoundComponent}
+  
+
   
 
 ]

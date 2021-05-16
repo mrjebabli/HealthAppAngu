@@ -1,8 +1,56 @@
-<p>drug-details works!</p>
-<h1>{{id}}</h1>
+<div *ngFor="let d of drugList">
+   
+    <div *ngIf="d.id == id">
+        <div class="container">
+
+            
+                  
+            <div>
+                <br> 
+                <br>
+                <br>
+              </div>
 
 
-<h1>{{name}}</h1>
-<h1>{{Laboratory}}</h1>
+            <h5 class="card-title"><p>  {{d.name}} </p></h5>
+            <img src="../../assets/{{d.name}}.png" class="card-img-top" alt="{{d.name}}.png">
+            <div>
+                <br> 
+                <br>
+               
+              </div>
+            <h6 class="card-subtitle mb-2 text-muted"><p> Form: {{d.Form}} </p></h6>
+            <h6 class="card-subtitle mb-2 text-muted"> <p>  Laboratory: {{d.Laboratory}} </p></h6>
+            <h6 class="card-subtitle mb-2 text-muted"> <p>  Dosage: {{d.Dosage}} </p> </h6>
+            
+            <h6 class="card-subtitle mb-2 text-muted"> <p>  Available Quantity: {{d.quantity}} pieces </p> </h6>
+            
+            <h6 class="card-title"><p>Price: {{d.Price}} DT </p></h6>
+          
+            <div>
+                <br> 
+                <br>
+                <br>
+              </div>
+            <button type="button" style="float: left" class="btn btn-primary">Buy Now</button>
+            <button type="button" style="float: right"  class="btn btn-secondary">Add to Cart</button>
+            
+            <div>
+                <br> 
+                <br>
+                <br>
+              </div>
+         
+       
+     
+   
 
-<h1>{{id}}</h1>
+    </div>
+            
+                             
+                 
+                 
+        </div>
+      </div>
+    
+    

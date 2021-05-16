@@ -1,4 +1,3 @@
-import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Drug } from '../model/drug';
 
@@ -10,13 +9,15 @@ import { DrugsService } from '../shared/drugs.service';
   styleUrls: ['./drug-list.component.css']
 })
 export class DrugListComponent implements OnInit {
-  drugList:Drug[];
-  data : Drug[]
+  drugList: Drug[];
+  drug: Drug;
+
   constructor(private drugsService: DrugsService ) { }
 
   ngOnInit(): void {
     
-    this.drugsService.getDrug().subscribe(
-      (d : Drug[]) => this.drugList.d);
+    this.drugsService.getAll().subscribe(
+      (data: Drug[]) => this.drugList = data);
+      
 }
 }
