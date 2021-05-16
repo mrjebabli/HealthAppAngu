@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Drug } from '../model/Drug';
+import { DrugsService } from '../shared/drugs.service';
 
 @Component({
   selector: 'app-drug',
@@ -8,10 +9,17 @@ import { Drug } from '../model/Drug';
 })
 export class DrugComponent implements OnInit {
   @Input() drug: Drug;
-
-  constructor() { }
+  ListDrug:Drug[]; 
+  constructor(private Sce : DrugsService) { }
 
   ngOnInit(): void {
   }
-
+  
+  SuppDrug(id){
+    this.Sce.deleteDrug(id).subscribe(  ()=> {
+      this. ListDrug= this. ListDrug.filter
+      (i=> i.id !=id)
+    } );
+    console.log("this id is "+id);
+   }
 }

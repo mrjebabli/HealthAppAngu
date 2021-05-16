@@ -57,15 +57,6 @@
   ],
   "drugs": [
     {
-      "id": 3,
-      "name": "DOLIPRANE VITAMINE C",
-      "Laboratory": "WINTHROP PHARMA TUNISIE",
-      "Dosage": "500 MG",
-      "Form": "tablet",
-      "quantity": 100,
-      "Price": 4.16
-    },
-    {
       "id": 2,
       "name": "OSMOLAX",
       "Laboratory": "ADWYA",
@@ -84,6 +75,15 @@
       "Price": 4.16
     },
     {
+      "id": 5,
+      "name": "DOLIPRANE VITAMINE C",
+      "Laboratory": "WINTHROP PHARMA TUNISIE",
+      "Dosage": "500 MG",
+      "Form": "tablet",
+      "quantity": 100,
+      "Price": 4.16
+    },
+    {
       "id": 6,
       "name": "OSMOLAX",
       "Laboratory": "ADWYA",
@@ -93,22 +93,13 @@
       "Price": 4.485
     },
     {
-      "id": 8,
+      "id": 7,
       "name": "BI-PROFENID LP",
       "Laboratory": "SANOFI-AVENTIS FRANCE",
       "Dosage": "100 mg",
       "Form": "tablet",
       "quantity": 100,
       "Price": 4.16
-    },
-    {
-      "id": 9,
-      "name": "BI-PROFENID LP",
-      "Laboratory": "SANOFI-AVENTIS FRANCE",
-      "Dosage": "100 mg",
-      "Form": "tablet",
-      "quantity": 100,
-      "Price": 4160
     }
   ]
 }

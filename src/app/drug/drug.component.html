@@ -26,9 +26,12 @@
         <h6 class="card-title"><p>Price: {{drug.Price}} DT </p></h6>
       </div>
         <div class="card-footer">
-          <a  style="float: left" routerLink="{{drug.id}}">More Details</a>
-       
+          
+          <div class="col md-6">
+             <button class="btn btn-primary"  style="float: left" routerLink="{{drug.id}}">UPDATE </button>
+         <button class="btn btn-outline-danger"  style="float: right" (click)="SuppDrug(drug.id)"> Delete</button></div>
       </div> 
+     
     </div>
  
   <div>

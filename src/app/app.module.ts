@@ -16,6 +16,7 @@ import { DrugDetailsComponent } from './drug-details/drug-details.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import {  HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
+import { DrugUpdateComponent } from './drug-update/drug-update.component';
 
 
 
@@ -32,7 +33,8 @@ import { HomeComponent } from './home/home.component';
     DrugFormComponent,
     DrugDetailsComponent,
     NotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    DrugUpdateComponent
     
   ],
   imports: [

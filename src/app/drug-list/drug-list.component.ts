@@ -11,7 +11,7 @@ import { DrugsService } from '../shared/drugs.service';
 export class DrugListComponent implements OnInit {
   drugList: Drug[];
   drug: Drug;
-
+  n:string;
   constructor(private drugsService: DrugsService ) { }
 
   ngOnInit(): void {
@@ -20,4 +20,11 @@ export class DrugListComponent implements OnInit {
       (data: Drug[]) => this.drugList = data);
       
 }
+
+
+searchDrug(){
+  this.drugsService. searchDrug(this.drug.id).subscribe(
+    (data: Drug[]) => this.drugList = data);
+}
+
 }

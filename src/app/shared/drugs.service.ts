@@ -24,10 +24,15 @@ export class DrugsService {
   }
   updateDrug(id: number, d: Drug) {
     return this.http.put(this.url + id, d);
+   
   }
-  searchDrug(id: number){
-    return this.http.get<Drug>(this.url + id);
+ 
+  searchDrug(id){
+    return this.http.get(this.url + id);
   }
+ 
+ 
+  
 
 
 

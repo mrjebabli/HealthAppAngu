@@ -1,47 +1,37 @@
+
 <div *ngFor="let d of drugList">
    
-    <div *ngIf="d.id == id">
-        <div class="container">
+  <div *ngIf="d.id == id">
+      <div class="container"> 
 
+          <div>
+              <br> 
+              <br>
+              <br>
             
-                  
-            <div>
-                <br> 
-                <br>
-                <br>
-              </div>
-
-
-            <h5 class="card-title"><p>  {{d.name}} </p></h5>
-            <img src="../../assets/{{d.name}}.png"  style="max-width:50%;" alt="{{d.name}}.png">
-           
-            <div>
-                <br> 
-                <br>
-               
-              </div>
-            <h6 class="card-title"><p> Form: {{d.Form}} </p></h6>
-            <h6 class="card-title"> <p>  Laboratory: {{d.Laboratory}} </p></h6>
-            <h6 class="card-title"> <p>  Dosage: {{d.Dosage}} </p> </h6>
-            
-            <h6 class="card-title"> <p>  Available Quantity: {{d.quantity}} pieces </p> </h6>
-            
-            <h6 class="card-title"><p>Price: {{d.Price}} DT </p></h6>
-          
-            <div>
-                <br> 
-                <br>
-                <br>
-              </div>
-          
+          <h5 class="card-title">
+            <p>  {{d.name}}  </p> </h5>          
+          <img src="../../assets/{{d.name}}.png"  style="max-width:50%;" alt="{{d.name}}.png">
          
-       
-     
+          <div>
+              <br> 
+              <br>
    
+            </div>
+          <h6 class="card-title"><p> Form: {{d.Form}} </p></h6>
+          <h6 class="card-title"> <p>  Laboratory: {{d.Laboratory}} </p></h6>
+          <h6 class="card-title"> <p>  Dosage: {{d.Dosage}} </p> </h6>
+          
+          <h6 class="card-title"> <p>  Available Quantity: {{d.quantity}} pieces </p> </h6>
+          
+          <h6 class="card-title"><p>Price: {{d.Price}} DT </p></h6>
+        
+          <div>
+              <br> 
+              <br>
+              <br>
+            </div>
 
-    </div>
-              
-        </div>
-      </div>
-    
-    
+  </div>
+</div>
+</div> 
