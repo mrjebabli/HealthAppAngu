@@ -1,31 +1,30 @@
+<div class="container">
+  <div>
+    <br />
+    <br />
+  </div>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">All Drugs</a>
+      <form class="d-flex" #f="ngForm">
+        <input
+          class="form-control me-2"
+          type="search"
+          name="search"
+          placeholder="Search"
+          aria-label="Search"
+          [(ngModel)]="search"
+        />
 
-<div  class="container">
-    <div>
-        <br>
-        <br>
-      </div>
-    <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand">All Drugs</a>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search"  aria-label="Search">
-           
-           <button  class="btn btn-success" (click)="searchDrug()">Search</button>
-     
-            
-          </form>
-        </div>
-        
-      </nav>
-      <div>
-      <br>
-      <br>
-    </div> 
-<div class="row g-4">
-<app-drug  *ngFor='let m of drugList' [drug]="m" > </app-drug>
-
+        <button class="btn btn-success" (click)="searchDrug()">Search</button>
+      </form>
+    </div>
+  </nav>
+  <div>
+    <br />
+    <br />
+  </div>
+  <div class="row g-4">
+    <app-drug *ngFor="let m of drugList" [drug]="m"> </app-drug>
+  </div>
 </div>
-</div>
-
-
-

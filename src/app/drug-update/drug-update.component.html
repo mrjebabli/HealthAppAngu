@@ -1,54 +1,93 @@
 <div>
-    <br>
-    <br>
+  <br />
+  <br />
+</div>
+<div class="container">
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">name </span>
+
+    <input
+      type="number"
+      class="form-control"
+      type="text"
+      aria-label="Sizing example input"
+      name="fname"
+      #n="ngModel"
+      [(ngModel)]="drug.name"
+    />
   </div>
-  <div *ngFor="let d of drugList">
-     
-    <div *ngIf="d.id == id">
-  
-      <div  class="container">
-        <div class="input-group mb-3">
-        <span class="input-group-text" id="inputGroup-sizing-default">Id </span> 
-      
-      <input type="number" class="form-control" type="text"
-       aria-label="Sizing example input"  name="fname" value="{{d.id}}"></div>
-  
-  
-       <div class="input-group mb-3">
-        <span class="input-group-text" id="inputGroup-sizing-default">name </span> 
-      
-      <input type="number" class="form-control" type="text"
-       aria-label="Sizing example input"  name="fname" value="{{d.name}}" ></div>
-       <div class="input-group mb-3">
-        <span class="input-group-text" id="inputGroup-sizing-default">Form </span> 
-      
-      <input type="number" class="form-control" type="text"
-       aria-label="Sizing example input"  name="fname" value="{{d.Form}}"></div>
-       <div class="input-group mb-3">
-        <span class="input-group-text" id="inputGroup-sizing-default">Laboratory </span> 
-      
-      <input type="number" class="form-control" type="text"
-       aria-label="Sizing example input"  name="fname" value="{{d.Laboratory}}"></div>
-       <div class="input-group mb-3">
-        <span class="input-group-text" id="inputGroup-sizing-default">Dosage </span> 
-      
-      <input type="number" class="form-control" type="text"
-       aria-label="Sizing example input"  name="fname" value="{{d.Dosage}}"></div>
-       
-       <div class="input-group mb-3">
-        <span class="input-group-text" id="inputGroup-sizing-default">quantity</span> 
-      
-      <input type="number" class="form-control" type="text"
-       aria-label="Sizing example input"  name="fname" value="{{d.quantity            }}"></div>
-  
-       <div class="input-group mb-3">
-        <span class="input-group-text" id="inputGroup-sizing-default">Price  </span> 
-      
-      <input type="number" class="form-control" type="text"
-       aria-label="Sizing example input"  name="fname" value="{{d.Price  }}"></div>
-       
-       <button  class="btn btn-success" (click)="updateDrug()">Update Drug</button>
-        <br>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">Form </span>
+
+    <input
+      type="number"
+      class="form-control"
+      type="text"
+      aria-label="Sizing example input"
+      name="fname"
+      #f="ngModel"
+      [(ngModel)]="drug.Form"
+    />
   </div>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default"
+      >Laboratory
+    </span>
+
+    <input
+      type="number"
+      class="form-control"
+      type="text"
+      aria-label="Sizing example input"
+      name="fname"
+      #l="ngModel"
+      [(ngModel)]="drug.Laboratory"
+    />
   </div>
-  
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">Dosage </span>
+
+    <input
+      type="number"
+      class="form-control"
+      type="text"
+      aria-label="Sizing example input"
+      name="fname"
+      #d="ngModel"
+      [(ngModel)]="drug.Dosage"
+    />
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default"
+      >quantity</span
+    >
+
+    <input
+      type="number"
+      class="form-control"
+      type="text"
+      aria-label="Sizing example input"
+      name="fname"
+      #q="ngModel"
+      [(ngModel)]="drug.quantity"
+    />
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">Price </span>
+
+    <input
+      type="number"
+      class="form-control"
+      type="text"
+      aria-label="Sizing example input"
+      name="fname"
+      #pr="ngModel"
+      [(ngModel)]="drug.Price"
+    />
+  </div>
+
+  <button class="btn btn-success" (click)="updateDrug()">Update Drug</button>
+  <br />
+</div>

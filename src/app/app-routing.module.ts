@@ -10,28 +10,20 @@ import { HomeComponent } from './home/home.component';
 import { DrugUpdateComponent } from './drug-update/drug-update.component';
 
 const ROUTES: Routes = [
-  {path:'addmedicament',component:DrugFormComponent},
-  {path:'drugs',component:DrugListComponent},
-  {path:'doctors',component:ListDoctorComponent},
-  {path:'drugs/:id',component: DrugUpdateComponent},
-  {path:'drugs/:id',component:DrugDetailsComponent},
-  
- 
-  {path:'home',component:HomeComponent },
-  {path:'',component:HomeComponent},
-  {path:'**',component:NotFoundComponent}
-  
+  { path: 'addmedicament', component: DrugFormComponent },
+  { path: 'drugs', component: DrugListComponent },
+  { path: 'doctors', component: ListDoctorComponent },
+  { path: 'drugs/details/:id', component: DrugDetailsComponent },
+  { path: 'drugs/:id', component: DrugUpdateComponent },
 
- 
-
-]
+  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
+  { path: '**', component: NotFoundComponent },
+];
 
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-    RouterModule.forRoot(ROUTES)
-  ],
-  exports:[RouterModule]
+  imports: [CommonModule, RouterModule.forRoot(ROUTES)],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

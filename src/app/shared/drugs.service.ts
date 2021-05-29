@@ -1,17 +1,15 @@
-
 import { Injectable } from '@angular/core';
-import { HttpClient, } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Drug } from '../model/drug';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DrugsService {
   url = 'http://localhost:3000/drugs/';
 
+  constructor(private http: HttpClient) {}
 
-  constructor(private http:HttpClient) { }
- 
   getAll() {
     return this.http.get<Drug[]>(this.url);
   }
@@ -23,19 +21,14 @@ export class DrugsService {
     return this.http.delete(this.url + id);
   }
   updateDrug(id: number, d: Drug) {
-    return this.http.put(this.url + id, d);
-   
+    return this.http.put(this.url + '/' + id, d);
   }
- 
-  searchDrug(id){
-    return this.http.get(this.url + id);
+
+  getDrug(id) {
+    return this.http.get(this.url + '/' + id);
   }
- 
- 
-  
 
-
-
-
-
+  searchDrug(id) {
+    return this.http.get(this.url + '/' + id);
+  }
 }
